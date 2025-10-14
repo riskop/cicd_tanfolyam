@@ -1,10 +1,15 @@
 FROM eclipse-temurin:21.0.8_9-jdk AS builder
-WORKDIR /app
-COPY . .
 RUN apt update && apt install -y dos2unix
+WORKDIR /app
+# trukk: legyen csak pom.xml, es a .mvn konyvtar, hogy cache-elje a maven letolteseit
+COPY mvnw pom.xml ./
+COPY .mvn .mvn
+#COPY . .
 RUN chmod +x mvnw
 RUN dos2unix mvnw
-RUN ./mvnw clean package -DskipTests
+RUN ./mvnw test 
+COPY src src
+RUN ./mvnw package -DskipTests
 
 FROM eclipse-temurin:21-jdk-alpine-3.20
 WORKDIR /app
