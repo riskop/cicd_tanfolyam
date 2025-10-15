@@ -1,6 +1,10 @@
 # CI CD tanfolyam
 
-900
+SZERDA
+------
+
+SONARQUBE
+---------
 
 sonarqube inditas
 
@@ -23,7 +27,13 @@ mvnw sonar:sonar -Dsonar.login=sqa_d6dfb134382912b21c0a9f265326971f45ec61f9
 ha azt akarjuk, hogy megvarja a qualitygate eredmenyet. CI CD be be kell kapcsolni!
 mvnw sonar:sonar -Dsonar.login=sqa_d6dfb134382912b21c0a9f265326971f45ec61f9 -Dsonar.qualitygate.wait=true
 
+Idea plugin is van, hogy már az ide ben is jelezze a problémákat ( mielőtt kommitolnánk ).
 
+
+DEVSECOPS
+- forrás - sonarqube
+- 3rd party libek
+  - owasp 
 
 
 
