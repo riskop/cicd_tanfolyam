@@ -48,7 +48,9 @@ KUBERNETES
 - rolling update / deployment
 
 - HELM : kubernetes csomagkezeloje
-  - CNCF landscape
+
+- CNCF landscape
+
 - disztribuciok pld. OKE (Oracle Kubernetes Engine), OpenShift, Rancher stb.
 
 Docker desktop ban van Kubernetes tamogatas
@@ -77,12 +79,35 @@ Deployment
   - tobb pod,
   - rolling update lehetosege (vagy recreate, ha nem futhat egymas mellett a ket verzio)
 
+kubernetes re telepites
+kubectl apply -f min-nginx-deployment.yaml
+
+Namespace: kubernetes ben szeparalasi lehetoseg
+
+kubectl get pods
+kubectl logs -f min-nginx-deployment-66f9786b59-6b2md
+kubectl port-forward pods/min-nginx-deployment-66f9786b59-6b2md 80:80 -n default
 
 
 
 
 
+kubectl apply -f mariadb-secrets.yaml
+kubectl apply -f mariadb-deployment.yaml
+kubectl apply -f employees-secrets.yaml
+kubectl apply -f employees-deployment.yaml
+
+kubectl delete -f mariadb-secrets.yaml
+kubectl delete -f mariadb-deployment.yaml
+kubectl delete -f employees-secrets.yaml
+kubectl delete -f employees-deployment.yaml
+
+kubectl delete -f employees-deployment.yaml
 
 
+------------------
 
+dbcode extension
 
+HELM install: https://github.com/helm/helm/releases
+csak kibontani a zip et
