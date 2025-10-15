@@ -68,8 +68,19 @@ kubectl config view
 kubectl cluster-info
 kubectl get nodes
 
-pod - altalaban 1 kontener fut benne
-sidecar kontener: pld stdout gyujtese es halozaton loggyujtobe tovabbitani
+pod 
+  - altalaban 1 kontener fut benne
+  - sidecar kontener: pld stdout gyujtese es halozaton loggyujtobe tovabbitani
+  - podnak 1 ip je van, konténerek (sidecar, stb) azon osztoznak, port utkozes kerulendo
+
+Deployment
+  - tobb pod,
+  - rolling update lehetosege (vagy recreate, ha nem futhat egymas mellett a ket verzio)
+
+
+
+
+
 
 
 
