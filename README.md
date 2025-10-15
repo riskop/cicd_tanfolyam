@@ -33,7 +33,8 @@ Idea plugin is van, hogy már az ide ben is jelezze a problémákat ( mielőtt k
 DEVSECOPS
 - forrás - sonarqube
 - 3rd party libek
-  - owasp 
+  - owasp - nwd adatbazis alapjan
+  - mvnw org.owasp:dependency-check-maven:check
 
 
 
