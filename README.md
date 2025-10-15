@@ -17,6 +17,14 @@ myaccounts/security/new token (global)
 sqa_d6dfb134382912b21c0a9f265326971f45ec61f9
 ---------------------------------------------
 
+sonar futtatas projektemen
+mvnw sonar:sonar -Dsonar.login=sqa_d6dfb134382912b21c0a9f265326971f45ec61f9
+
+ha azt akarjuk, hogy megvarja a qualitygate eredmenyet. CI CD be be kell kapcsolni!
+mvnw sonar:sonar -Dsonar.login=sqa_d6dfb134382912b21c0a9f265326971f45ec61f9 -Dsonar.qualitygate.wait=true
+
+
+
 
 
 
