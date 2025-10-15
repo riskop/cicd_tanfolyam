@@ -111,3 +111,5 @@ dbcode extension
 
 HELM install: https://github.com/helm/helm/releases
 csak kibontani a zip et
+
+../../../helm/helm upgrade --install employees .
