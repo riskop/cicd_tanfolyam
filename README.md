@@ -138,4 +138,19 @@ GITHUB
     - Job
       - job on belül step ek vannak
 
+runs on: ubuntu-latest -- csomo minden benne van, docker, javak, stb.
 
+gh cli install:
+choco install gh
+
+github actions: github marketplace
+pld. java telepito action ok. Lehet szűrni certified okra
+
+TRUKK
+-----
+
+git tud metaadatot is tartolni, most az kell, hogy az mvnw executable legyen:
+git update-index --add --chmod=+x mvnw
+
+m2 cache eles egyszeruen a java installer action nek megadhato, bele van epitve
+cache github oldalon uritheto ha kell
