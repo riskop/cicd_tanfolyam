@@ -154,3 +154,11 @@ git update-index --add --chmod=+x mvnw
 
 m2 cache eles egyszeruen a java installer action nek megadhato, bele van epitve
 cache github oldalon uritheto ha kell
+
+sikeres build es push után a github on a főlap/packages alatt megtalálható a "docker pull ghcr.io/riskop/cicd_employees:latest" minta parancs
+ez alapján:
+docker run -p 8080:8080 ghcr.io/riskop/cicd_employees:latest
+
+JHADES
+------
+
