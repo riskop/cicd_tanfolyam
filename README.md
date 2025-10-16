@@ -114,6 +114,9 @@ csak kibontani a zip et
 
 ../../../helm/helm upgrade --install employees .
 
+CSÜTÖRTÖK
+-----------------
+
 ----------------
 
 SERVICE MESH
@@ -122,10 +125,17 @@ SERVICE MESH
 
 Jenkins - csak cicd, régi
 
-GitLab - konténerek kezelése is, git szerver, stb
+GitLab - konténerek kezelése is, git szerver, stb. Full fejlesztesi folyamatot ad. István javaslata.
 
-GitHub
+GitHub - mi ezt használjuk.
 
+-----------------
 
+GITHUB
+- workflow.yaml
+  - workflow n belul job ok futnak. A jobok a fuggőségek szerint futhatnak parhuzamosan is
+    - minden run hoz tartozik egy artifact tár. Ezen a táron keresztül adhatnak át dolgokat a job ok.
+    - Job
+      - job on belül step ek vannak
 
 
