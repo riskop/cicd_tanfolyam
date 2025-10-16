@@ -159,6 +159,9 @@ sikeres build es push után a github on a főlap/packages alatt megtalálható a
 ez alapján:
 docker run -p 8080:8080 ghcr.io/riskop/cicd_employees:latest
 
+
+ghcr -- (GitHub Container Registry)
+
 JHADES
 ------
 
